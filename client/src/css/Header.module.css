@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.logo{
+    width: 15vw;
+ }
+ .nav_color{
+    background-color: #DDDDDD;
+    margin-bottom: 20px;
+ }
+ .padding{
+    padding-left: 7% !important;
+    padding-right: 7% !important;
+ }
+ .nav_link{
+    margin: 10px 20px;
+    color: #222831 !important;
+    font-size: large;
+    position: relative;
+ }
+ .nav_link::after {
+   background-color: #F05454;
+   content: "";
+   width: 0;
+   height: 3px;
+   left: 0;
+   bottom: 0;
+   transition: width 0.35s ease 0s;
+   position: absolute;
+ }
+ .nav_link:hover::after {
+   width: 100%;
+ }
+ .nav_brand{
+   font-size: xx-large;
+   margin: 10px 0 0 20px;
+   color: #222831;
+ }
+ 
+ @media screen and (max-width:1199px) {
+    .logo{
+       width: 23vw;
+    }
+ }
+ @media screen and (max-width:767px) {
+    .logo{
+       width: 30vw;
+    }
+ }
+ .stylit{
+    width: 0;
+ }
+ @media screen and (min-width:1280px) {
+    .stylit{
+       min-width: 9%;
+    }
+ }
+ .hoverinbac:hover{
+    border-bottom: 2px solid #F5C470;
+    border-top-left-radius: 0.5px;
+    border-bottom-left-radius: 0.5px;
+    border-top-right-radius: 0.5px;
+    border-bottom-right-radius: 0.5px;
+ }
